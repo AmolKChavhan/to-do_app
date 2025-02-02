@@ -1,0 +1,73 @@
+/* Navbar general styling */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #042c63;
+    padding: 1rem;
+  }
+  
+  .nav_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  /* Logo styling */
+  .nav_logo .MuiLink-root {
+    display: flex;
+    background: linear-gradient(
+      60deg,
+      rgba(255, 94, 58, 0.9),
+      rgba(255, 200, 124, 0.9),
+      rgba(255, 236, 139, 0.9)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  
+  /* Navigation Menu */
+  .desktop_menu {
+    display: flex;
+    gap: 1.5rem; /* Spacing between the menu items */
+  }
+  
+  /* Mobile menu button */
+  .menu_button {
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: white;
+  }
+  
+  /* User settings */
+  .user-settings {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .desktop_menu {
+      display: none; /* Hide desktop menu on small screens */
+    }
+  
+    .menu_button {
+      display: inline-block; /* Show mobile menu button */
+    }
+  
+    .nav_menu {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      width: 100%;
+      background-color: #fff;
+    }
+  }
+  
